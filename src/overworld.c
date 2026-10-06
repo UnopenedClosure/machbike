@@ -877,7 +877,7 @@ static void LoadMapFromWarp(bool32 a1)
 void ResetInitialPlayerAvatarState(void)
 {
     sInitialPlayerAvatarState.direction = DIR_SOUTH;
-    sInitialPlayerAvatarState.transitionFlags = PLAYER_AVATAR_FLAG_ON_FOOT;
+    sInitialPlayerAvatarState.transitionFlags = PLAYER_AVATAR_FLAG_MACH_BIKE;
 }
 
 void StoreInitialPlayerAvatarState(void)
@@ -958,9 +958,9 @@ static u16 GetCenterScreenMetatileBehavior(void)
 
 bool32 Overworld_IsBikingAllowed(void)
 {
-    if (!gMapHeader.allowCycling)
-        return FALSE;
-    else
+    //if (!gMapHeader.allowCycling)
+    //    return FALSE;
+    //else
         return TRUE;
 }
 

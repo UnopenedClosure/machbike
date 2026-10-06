@@ -949,17 +949,18 @@ static bool8 WillPlayerCollideWithCollision(u8 newTileCollision, u8 direction)
 
 bool8 IsBikingDisallowedByPlayer(void)
 {
-    s16 x, y;
-    u8 tileBehavior;
+	return FALSE;
+    //s16 x, y;
+    //u8 tileBehavior;
 
-    if (!(gPlayerAvatar.flags & (PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_UNDERWATER)))
-    {
-        PlayerGetDestCoords(&x, &y);
-        tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
-        if (!IsRunningDisallowedByMetatile(tileBehavior))
-            return FALSE;
-    }
-    return TRUE;
+    //if (!(gPlayerAvatar.flags & (PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_UNDERWATER)))
+    //{
+    //    PlayerGetDestCoords(&x, &y);
+    //    tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
+    //    if (!IsRunningDisallowedByMetatile(tileBehavior))
+    //        return FALSE;
+    //}
+    //return TRUE;
 }
 
 bool8 IsPlayerNotUsingAcroBikeOnBumpySlope(void)
