@@ -482,6 +482,13 @@
 	map \map
 	.endm
 
+	@ Warps the player to another map using a hole animation, to the specified coordinates. If the specified map is
+	@ MAP_UNDEFINED it will instead use the map set by setholewarp.
+	.macro warpholewithcoords map:req, a, b, c
+	.byte SCR_OP_WARPHOLECOORDS
+	formatwarp \map, \a, \b, \c
+	.endm
+
 	@ Warps the player to the specified map using a teleport effect. Effect is similar to warpspinenter but
 	@ this warp has a fade out first and doesn't maintain the original facing direction.
 	@ Warp commands can be given either the id of which warp location to go to on the destination map

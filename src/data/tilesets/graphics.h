@@ -820,7 +820,7 @@ const u32 gTilesetTiles_SecretBaseBlueCave[] = INCGFX_U32("data/tilesets/seconda
 const u32 gTilesetTiles_SecretBaseYellowCave[] = INCGFX_U32("data/tilesets/secondary/secret_base/yellow_cave/tiles.png", ".4bpp", "-num_tiles 83 -Wnum_tiles");
 const u32 gTilesetTiles_SecretBaseRedCave[] = INCGFX_U32("data/tilesets/secondary/secret_base/red_cave/tiles.png", ".4bpp", "-num_tiles 83 -Wnum_tiles");
 
-const u32 gTilesetTiles_InsideOfTruck[] = INCGFX_U32("data/tilesets/secondary/inside_of_truck/tiles.png", ".4bpp.lz", "-num_tiles 62 -Wnum_tiles");
+const u32 gTilesetTiles_InsideOfTruck[] = INCGFX_U32("data/tilesets/secondary/inside_of_truck/tiles.png", ".4bpp.lz", "-num_tiles 64 -Wnum_tiles");
 
 const u16 gTilesetPalettes_InsideOfTruck[][16] =
 {
